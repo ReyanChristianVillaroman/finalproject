@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>SILAW - Your Profile</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script>
+    // This script will parse the URL parameters and display the user's information
+    window.onload = function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const name = urlParams.get('name');
+      const email = urlParams.get('email');
+      const pledge = urlParams.get('pledge');
+      
+      if (name) {
+        document.getElementById('welcomeMessage').textContent = `Welcome, ${name}!`;
+        document.getElementById('userEmail').textContent = email;
+        
+        // Set pledge text based on selection
+        let pledgeText = '';
+        switch(pledge) {
+          case 'reduce10':
+            pledgeText = 'to reduce energy use by 10%';
+            break;
+          case 'reduce20':
+            pledgeText = 'to reduce energy use by 20%';
+            break;
+          case 'reduce30':
+            pledgeText = 'to reduce energy use by 30%';
+            break;
+          case 'other':
+            pledgeText = 'to follow a custom energy saving plan';
+            break;
+          default:
+            pledgeText = 'to save energy';
+        }
+        document.getElementById('userPledge').textContent = pledgeText;
+      }
+    };
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <h1><a href="index.html"><img src="LOGO.png" width="150" height="100"></a></h1>
+            <h2>Saving. Illuminating. to Lessen. Alarming. Warming.</h2>
+          </div>
+        </div>
+      </div>
+      <div id="nav">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="WhatToDo.html">What to Do?</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="selected"><a href="profile.html">Your Profile</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="aside">
+        <h1>Your Campaign Tools</h1>
+        <ul>
+          <li><a href="WhatToDo.html">Energy Saving Tips</a></li>
+          <li><a href="#">Track Your Progress</a></li>
+          <li><a href="#">Invite Friends</a></li>
+          <li><a href="#">Community Forum</a></li>
+        </ul>
+        <h1>Your Impact</h1>
+        <p>By joining our campaign, you're helping to:</p>
+        <ul>
+          <li>Reduce carbon emissions</li>
+          <li>Lower energy demand</li>
+          <li>Inspire others to conserve</li>
+        </ul>
+      </div>
+      <div id="article">
+        <h1 id="welcomeMessage">Welcome to SILAW!</h1>
+        <div class="profile-section">
+          <h2>Your Profile Information</h2>
+          <p><strong>Email:</strong> <span id="userEmail"></span></p>
+          <p><strong>Your Pledge:</strong> You've pledged <span id="userPledge"></span></p>
+        </div>
+        
+        <div class="profile-section">
+          <h2>Next Steps</h2>
+          <p>Here's how you can get started with your energy conservation journey:</p>
+          <ol>
+            <li>Review our <a href="WhatToDo.html">What to Do?</a> page for practical tips</li>
+            <li>Take our <a href="quiz.html">energy quiz</a> to assess your current usage</li>
+            <li>Set up your energy saving goals for the next month</li>
+            <li>Share your commitment on social media to inspire others</li>
+          </ol>
+        </div>
+        
+        <div class="profile-section">
+          <h2>Your Campaign Badge</h2>
+          <div style="border: 1px solid #ddd; padding: 15px; text-align: center; width: 200px;">
+            <p><strong>SILAW Energy Saver</strong></p>
+            <p>Member since: <script>document.write(new Date().toLocaleDateString());</script></p>
+          </div>
+          <p style="margin-top: 15px;">Share your badge on social media to spread awareness!</p>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="WhatToDo.html">What to Do?</a> | <a href="contact.html">Contact</a> | <a href="profile.html">Your Profile</a></p>
+      <p>Copyright &copy; SILAW </p>
+    </div>
+  </div>
+</body>
+</html>
