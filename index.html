@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>SILAW</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" /> 
+
+  <style>
+  .sprite
+  { 
+    background: url('BAI.jpg') no-repeat 0 0; 
+    width: 250px; 
+    height: 250px; 
+    animation: varName 1s steps (4) infinite; 
+    @keyframes varName {
+      from{background-position-x: 0px} 
+      to{background-position-x:-405px;}
+    } 
+  }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+          <h1><a href="index.html"><img src="LOGO.png"  width="150" height="100"></a></h1>
+          <h2>Saving. Illuminating. to Lessen. Alarming. Warming.</h2>
+          </div>
+        </div>
+      </div>
+      <div id="nav">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="one"><a href="index.html">Home</a></li>
+          <li><a class="one" href="quiz.html">Quiz</a></li>
+          <li><a class="one" href="WhatToDo.html">What to do?</a></li>
+          <li><a class="one" href="contact.html">Contact</a></li>
+          <li><a class="one" href="signup.html">Sign Up</a></li>
+        </ul>
+        
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="aside">
+        <video width="200" height="200" autoplay muted>
+          <source src="VIDEO.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <h1>Useful Links</h1>
+        <ul>
+          <li><a href="https://justenergy.com/blog/understanding-energy-conservation-and-its-many-benefits/" target="_blank">Understanding Energy Conservation and Its Many Benefits</a></li>
+          <li><a href="https://constantenergy.net/blog/why-is-it-important-to-conserve-energy/" target="_blank">Why is it Important to Conserve Energy</a></li>
+          <li><a href="https://www.nrdc.org/stories/energy-efficiency-clean-facts" target="_blank">Energy Efficiency Facts</a></li>
+        </ul>
+        <h1>Search</h1>
+        <form method="post" action="#" id="search_form">
+                  
+          <a href="https://Google.com">
+           &nbsp; &nbsp;       &nbsp; &nbsp;       &nbsp; &nbsp;
+           <img src="style/search.png" alt="Search" title="Search">
+                    
+         </a>
+        <br>
+       <br>
+       <br>
+       <br>
+         <audio  width="200" height="200" controls autoplay>
+          <source src="MUSIC.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+
+        </audio>
+     </form>
+      </div> 
+      
+      <div id="article">
+        <h1>Empowering You to Save Energy and Fight Climate Change.</h1>
+        <p>Electricity powers our homes, our lives, and our world. But with great power comes great responsibility. The majority of our electricity still comes from fossil fuels, which emit large amounts of carbon dioxide, contributing to climate change. Every light we leave on, every device we forget to unplug, and every overused appliance adds to this problem. At Silaw, we believe that small actions can lead to big changes.</p>
+        <h2>Did you know?</h2>
+        <p>Making the switch to energy efficiency isn't just about cutting costs though thats a great benefit, its also about reducing our environmental impact. Small, everyday changes can add up to a huge collective difference.</p>
+        <ul>
+          <li>Nearly 40% of global carbon emissions come from energy production.</li>
+          <li>By 2050, if no changes are made, these emissions could double, leading to more extreme weather, higher global temperatures, and rising sea levels.</li>
+          <li>Wasting electricity also wastes money, on average, homes lose 10% of their energy through devices left on standby.
+          </li>
+        </ul>
+      </div>
+    </div> 
+
+    <div id="compute">
+
+      <h2>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Lets Compute YOUR Power Consumption!</h2>
+      
+      
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="num1">Enter your bulb watts (search up your model by pressing the magnifying button):</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" id="num1" placeholder="WATTS">
+        <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="num2"> Estimate the hours your bulb is on::</label>&nbsp;&nbsp;
+  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="number" id="num2" placeholder="HOURS">
+  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+
+  <button onclick="calc()">Calculate</button>
+  <h3>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    RESULT:</h3>
+  <p id="result"></p>
+
+  <script>
+    function calc() {
+      const num1 = parseFloat(document.getElementById("num1").value);
+      const num2 = parseFloat(document.getElementById("num2").value);
+      const sum = num1 * num2;
+      
+
+      document.getElementById("result").innerText = " " + " Estimate your total energy consumption: " + sum;
+    }
+  </script>
+
+ 
+
+    </div>
+  </div> 
+
+      <div 
+         class="sprite">
+      </div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="WhatToDo.html">What to Do?</a> | <a href="contact.html">Contact</a> </p>
+      <p>Copyright &copy; SILAW </p>
+    </div>
+  </div>
+</body>
+</html>
